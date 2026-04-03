@@ -1,0 +1,28 @@
+import { notFound } from "next/navigation";
+import { getProductById, products } from "@/lib/products";
+import { ProductDetails } from "@/components/product-details";
+
+export function generateStaticParams() {
+  return products.map((product) => ({
+    id: product.id,
+  }));
+}
+
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const product = getProductById(id);
+
+  if (!product) {
+    notFound();
+  }
+
+  const relatedProducts = products
+    .filter((p) => p.category === product.category && p.id !== product.id)
+    .slice(0, 4);
+
+  return <ProductDetails product={product} relatedProducts={relatedProducts} />;
+}

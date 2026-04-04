@@ -1,0 +1,223 @@
+================================================================================
+           LUXE - Online Fashion Store | Presentation Notes
+           Global Digital Business - ICA
+           Duration: 10-15 minutes
+================================================================================
+
+MAIN IDEA:
+The project demonstrates the design and functionality of an online fashion
+store called "LUXE". It is a fully responsive, modern e-commerce website
+built with Next.js, showcasing premium fashion products with a complete
+shopping experience from browsing to checkout.
+
+================================================================================
+1. SITE DESIGN (3-4 minutes)
+================================================================================
+
+KEY POINTS TO EXPLAIN:
+
+- Color Palette:
+  The site uses a carefully chosen combination of Navy Blue, Emerald Green,
+  and White. This creates a premium, trustworthy, and modern feel that
+  aligns with the luxury fashion brand identity.
+
+  * Navy Blue (#1E293B) — Primary color used in headers, footers, and 
+    buttons. Conveys professionalism and trust.
+  * Emerald Green (#10B981) — Accent color for interactive elements like
+    "Subscribe" buttons and hover effects. Adds energy and freshness.
+  * White (#FFFFFF) — Background color providing clean whitespace and
+    a modern, airy atmosphere.
+
+- Typography:
+  Two fonts are used:
+  * "Inter" — A clean, modern sans-serif font for body text and navigation.
+  * "Playfair Display" — An elegant serif font used for headings and 
+    product titles, giving a luxury editorial feel.
+
+- Visual Elements to Show:
+  * Hero section with full-width background image and overlay
+  * Product cards with hover zoom effects and shadow transitions
+  * Rounded corners (rounded-xl, rounded-2xl) for a soft, modern aesthetic
+  * Responsive layout that adapts from mobile to desktop
+  * Premium micro-interactions (animated underlines on nav links,
+    button hover effects, smooth transitions)
+
+- Design Inspiration:
+  The design follows modern e-commerce best practices seen in brands like
+  COS, Everlane, and NET-A-PORTER — minimal, elegant, and focused on
+  the product imagery.
+
+WHAT TO SHOW:
+  → Open the homepage and scroll through to demonstrate the visual design
+  → Resize the browser to show responsive behavior (mobile vs desktop)
+  → Point out the color scheme consistency across all pages
+
+
+================================================================================
+2. NAVIGATION (2-3 minutes)
+================================================================================
+
+KEY POINTS TO EXPLAIN:
+
+- Header Navigation:
+  * Sticky header that stays visible while scrolling
+  * Contains: Logo (LUXE), main nav links, and shopping cart icon
+  * Nav links: Home, Shop, About, Contact
+  * Animated underline effect on hover (emerald green line slides in)
+  * Cart icon shows a badge with the number of items
+
+- Mobile Navigation:
+  * On smaller screens, the nav links collapse into a hamburger menu (☰)
+  * Tapping the menu icon reveals a full-width dropdown menu
+  * Menu closes automatically when a link is clicked
+
+- Page Structure:
+  * Home → Hero banner, categories, featured products, brand story, newsletter
+  * Shop → Full product catalog with category filtering
+  * About → Brand story and company values
+  * Contact → Contact form and business information
+  * Product Pages → Individual product details with size selection
+  * Cart → Shopping cart with quantity management
+  * Shipping → Shipping and returns information
+
+- Category Navigation:
+  * "Shop by Category" section on the homepage with visual category cards
+  * Categories: Tops, Bottoms, Dresses, Knitwear, Outerwear
+  * Clicking a category takes the user to the shop page filtered by that category
+
+WHAT TO SHOW:
+  → Click through each navigation link to show page transitions
+  → Demonstrate the mobile hamburger menu (resize browser or use dev tools)
+  → Show the category filtering on the shop page
+  → Click on a product to show the product detail page
+  → Click the cart icon to navigate to the cart
+
+
+================================================================================
+3. BUSINESS INFORMATION (2-3 minutes)
+================================================================================
+
+KEY POINTS TO EXPLAIN:
+
+- Brand Identity:
+  * LUXE is positioned as a modern luxury fashion brand
+  * Tagline: "Timeless Elegance"
+  * Founded with a focus on quality craftsmanship and sustainable practices
+  * The brand story is prominently featured on both the homepage and about page
+
+- About Page Content:
+  * Brand history and founding story
+  * Three core values displayed with icons:
+    1) Quality Craftsmanship — finest materials, meticulous attention to detail
+    2) Sustainable Practices — responsible sourcing, ethical manufacturing
+    3) Timeless Design — pieces that transcend seasonal trends
+
+- Contact Information:
+  * Contact page with a form for customer inquiries
+  * Business contact details (email, phone, address)
+
+- Product Information:
+  * Each product has: name, price, description, available sizes
+  * Some products show original vs sale price
+  * "New" and "Sale" badges on applicable products
+  * Product details section listing material quality, care instructions,
+    and shipping threshold ($150 for free shipping)
+
+- Footer:
+  * Organized into sections: Shop links, Company links, Support links
+  * Quick access to all key pages
+  * Newsletter signup for customer engagement
+  * Copyright notice
+
+WHAT TO SHOW:
+  → Navigate to the About page and explain the brand values
+  → Show a product detail page and explain the business info displayed
+  → Scroll to the footer and show the organized business links
+  → Show the newsletter signup section
+
+
+================================================================================
+4. SHOPPING CART (3-4 minutes)
+================================================================================
+
+KEY POINTS TO EXPLAIN:
+
+- Adding Products to Cart:
+  * User selects a size (required before adding)
+  * User can adjust quantity using +/- buttons
+  * "Add to Cart" button changes to green "Added to Cart" confirmation
+  * If no size is selected, the button shows "Select a Size" and is disabled
+  * Cart icon in the header updates with item count in real time
+
+- Cart Page Features:
+  * Lists all added items with: image, name, size, price, quantity
+  * Users can increase/decrease quantity directly in the cart
+  * Users can remove individual items
+  * Running subtotal is calculated and displayed
+  * Cart persists while browsing (using React Context state management)
+
+- Cart Technical Implementation:
+  * Built with React Context API for global state management
+  * CartProvider wraps the entire application
+  * Actions: addItem, removeItem, updateQuantity, clearCart
+  * Total items and total price are computed dynamically
+
+- Checkout Flow:
+  * "Proceed to Checkout" button on the cart page
+  * Shipping information page
+  * The flow demonstrates a complete e-commerce user journey:
+    Browse → Select Product → Choose Size → Add to Cart → View Cart → Checkout
+
+WHAT TO SHOW:
+  → Go to a product page, select a size, and add to cart
+  → Show the cart badge updating in the header
+  → Add a second product to demonstrate multiple items
+  → Navigate to the cart page
+  → Change quantity and remove an item
+  → Point out the subtotal updating in real time
+  → Click "Proceed to Checkout" to show the shipping page
+
+
+================================================================================
+PRESENTATION FLOW SUMMARY (10-15 min)
+================================================================================
+
+1. INTRODUCTION (1 min)
+   - Introduce LUXE as a modern e-commerce fashion store
+   - Mention the tech stack: Next.js, React, Tailwind CSS
+
+2. SITE DESIGN (3-4 min)
+   - Walk through the homepage design
+   - Explain color choices and typography
+   - Show responsive design
+
+3. NAVIGATION (2-3 min)
+   - Demo the header navigation and mobile menu
+   - Click through all pages
+   - Show category filtering
+
+4. BUSINESS INFORMATION (2-3 min)
+   - Show the About page and brand values
+   - Show product details and footer
+
+5. SHOPPING CART (3-4 min)
+   - Live demo: add items, view cart, modify quantities
+   - Show the complete shopping flow
+
+6. CONCLUSION (1 min)
+   - Summarize the key features
+   - Mention potential future improvements (payment integration,
+     user accounts, order tracking)
+
+================================================================================
+TIPS FOR PRESENTING
+================================================================================
+
+- Have the site running locally (npm run dev) or deployed before starting
+- Use a large browser window for the audience to see clearly
+- Practice the shopping cart demo beforehand so it flows smoothly
+- Keep a product already in the cart as a backup in case of demo issues
+- Speak about design DECISIONS, not just what things look like
+  (e.g., "We chose navy blue because it conveys trust and professionalism")
+
+================================================================================

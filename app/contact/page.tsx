@@ -13,13 +13,13 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+998 90 002 99 09",
+    href: "tel:+998900029909",
   },
   {
     icon: MapPin,
     label: "Address",
-    value: "123 Fashion Ave, New York, NY 10001",
+    value: "Afrosiyob 28/14, Mirabad District, Tashkent, Uzbekistan",
   },
   {
     icon: Clock,

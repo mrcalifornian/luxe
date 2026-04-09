@@ -26,7 +26,7 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      {/* <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=600&fit=crop"
@@ -45,7 +45,7 @@ export default function AboutPage() {
             Redefining modern elegance since 2010
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Story */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -56,7 +56,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                LUXE was founded with a singular vision: to create fashion that stands the test of time. In a world of fast fashion and fleeting trends, we chose a different path.
+                LUXE was found with a singular vision: to create fashion that stands the test of time. In a world of fast fashion and fleeting trends, we chose a different path.
               </p>
               <p>
                 Our journey began in a small atelier, where every stitch was placed with intention and every fabric chosen with care. Today, while we have grown, our commitment to quality and craftsmanship remains unchanged.

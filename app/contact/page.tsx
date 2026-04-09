@@ -7,13 +7,13 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@luxe.com",
+    value: "brightasdiamond@luxe.com",
     href: "mailto:brightasdiamond@luxe.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+998 90 002 99 09",
+    value: "+998 99 433 35 37",
     href: "tel:+998994333537",
   },
   {

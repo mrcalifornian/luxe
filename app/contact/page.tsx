@@ -8,13 +8,13 @@ const contactInfo = [
     icon: Mail,
     label: "Email",
     value: "hello@luxe.com",
-    href: "mailto:hello@luxe.com",
+    href: "mailto:brightasdiamond@luxe.com",
   },
   {
     icon: Phone,
     label: "Phone",
     value: "+998 90 002 99 09",
-    href: "tel:+998900029909",
+    href: "tel:+998994333537",
   },
   {
     icon: MapPin,
@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon-Fri: 9am-6pm EST",
+    value: "Mon-Fri: 9:00 - 18:00",
   },
 ];
 
